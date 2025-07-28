@@ -3,7 +3,9 @@ import Link from "next/link";
 export default function Navigation() {
   const links = [
     { label: "Home", url: "#" },
-    { label: "About", url: "" },
+    { label: "About", url: "#about" },
+    { label: "Projects", url: "#projects" },
+    { label: "Contact", url: "#contact" },
   ];
   return (
     // Navigation
@@ -14,7 +16,10 @@ export default function Navigation() {
         </div>
         <div className="">
           {links.map((item) => (
-            <Link href="#" className="bg-pink-300 px-6 py-2 rounded-full text-black mr-2 text-[12px]">
+            <Link
+              href={item.url}
+              className="bg-pink-300 px-6 py-2 rounded-full text-black mr-2 text-[12px] lowercase"
+            >
               {item.label}
             </Link>
           ))}
