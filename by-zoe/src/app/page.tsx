@@ -1,6 +1,10 @@
 import Link from "next/link";
 
 export default function Navigation() {
+  const links = [
+    { label: "Home", url: "#" },
+    { label: "About", url: "" },
+  ];
   return (
     // Navigation
     <header className="bg-black">
@@ -8,10 +12,13 @@ export default function Navigation() {
         <div className="flex lg:flex-1">
           <Link href="">by zoe</Link>
         </div>
-        <Link href="#" className="text-white">home</Link>
-        <Link href="#" className="text-white">about</Link>
-        <Link href="#" className="text-white">project</Link>
-        <Link href="#" className="text-white">contact</Link>
+        <div className="">
+          {links.map((item) => (
+            <Link href="#" className="bg-pink-300 px-6 py-2 rounded-full text-black mr-2 text-[12px]">
+              {item.label}
+            </Link>
+          ))}
+        </div>
       </nav>
     </header>
   );
