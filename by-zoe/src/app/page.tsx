@@ -15,7 +15,7 @@ export default function Navigation() {
   return (
     <>
       {/* navigation */}
-      <header className="bg-black mx-auto sticky top-0">
+      <header className="bg-black/50 backdrop-blur-lg mx-auto sticky top-0">
         {/* desktop navigation */}
         <nav className="hidden mx-auto lg:flex items-center lg:justify-center justify-between p-6 lg:px-16">
           <div className="flex lg:flex-1">
