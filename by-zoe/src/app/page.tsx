@@ -7,6 +7,11 @@ export default function Navigation() {
     { label: "Projects", url: "#projects" },
     { label: "Contact", url: "#contact" },
   ];
+  const projects = [
+    { name: "lorem", image: "", url: "#", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit dignissimos excepturi recusandae voluptatibus, minima quidem rerum modi, dolorum omnis exercitationem eligendi enim explicabo deserunt fuga nobis pariatur. Obcaecati, inventore dignissimos!", category: "web development"},
+    { name: "lorem", image: "", url: "#", description: "lorem ipsum", category: "web development"},
+    { name: "lorem", image: "", url: "#", description: "lorem ipsum", category: "web development"}
+  ]
   return (
     <>
       {/* navigation */}
@@ -49,6 +54,9 @@ export default function Navigation() {
         className="flex bg-black justify-center items-center w-full py-6 px-6 min-h-[400px]"
       >
         <div className="max-w-7xl text-white items-center justify-center text-center lg:text-[20px] text-[14px]">
+          <h1 className="lg:text-[25px] text-[20px] text-pink-300 mb-6">
+            about me/
+          </h1>
           <p className="mb-6">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
             dignissimos excepturi recusandae voluptatibus, minima quidem rerum
@@ -67,6 +75,25 @@ export default function Navigation() {
             modi, dolorum omnis exercitationem eligendi enim explicabo deserunt
             fuga nobis pariatur. Obcaecati, inventore dignissimos!
           </p>
+        </div>
+      </section>
+      {/* projects */}
+      <section
+        id="projects"
+        className="mx-auto max-w-7xl bg-black justify-center items-center w-full py-6 px-6 min-h-[400px]"
+      >
+        <h1 className="lg:text-[25px] text-[20px] text-pink-300 mb-6">
+          projects i've worked on/
+        </h1>
+        <div className="grid grid-cols-3 gap-4">
+          {projects.map((item) => (
+            <div className="col-span-4">
+              <image />
+              <h1 className="">{item.name}</h1>
+              <p className="">{item.description}</p>
+              <Link href={item.url}>see more</Link>
+            </div>
+          ))}
         </div>
       </section>
     </>
