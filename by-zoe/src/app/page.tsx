@@ -14,21 +14,23 @@ export default function Navigation() {
       image: "/project.jpg",
       url: "#",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit dignissimos excepturi recusandae voluptatibus, minima quidem rerum modi, dolorum omnis exercitationem eligendi enim explicabo deserunt fuga nobis pariatur. Obcaecati, inventore dignissimos!",
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, inventore dignissimos!",
       category: "web development",
     },
     {
       name: "lorem",
       image: "/project.jpg",
       url: "#",
-      description: "lorem ipsum",
+      description:
+        "Fugit dignissimos excepturi recusandae voluptatibus, minima quidem rerum modi.",
       category: "web development",
     },
     {
       name: "lorem",
       image: "/project.jpg",
       url: "#",
-      description: "lorem ipsum",
+      description:
+        "dolorum omnis exercitationem eligendi enim explicabo deserunt fuga nobis pariatur.",
       category: "web development",
     },
   ];
@@ -78,7 +80,7 @@ export default function Navigation() {
         className="flex bg-black justify-center items-center w-full py-6 px-6 min-h-[400px]"
       >
         <div className="max-w-7xl text-white items-center justify-center text-center lg:text-[20px] text-[14px]">
-          <h1 className="lg:text-[25px] text-[20px] text-pink-300 mb-6">
+          <h1 className="lg:text-[35px] text-[20px] text-pink-300 mb-6">
             about me/
           </h1>
           <p className="mb-6">
@@ -107,27 +109,34 @@ export default function Navigation() {
         id="projects"
         className="mx-auto max-w-7xl bg-black justify-center items-center w-full py-6 px-6 min-h-[400px]"
       >
-        <h1 className="lg:text-[25px] text-[20px] text-center text-pink-300 mb-6">
+        <h1 className="lg:text-[35px] text-[20px] text-center text-pink-300 mb-6">
           projects i've worked on/
         </h1>
         <div className="grid lg:grid-cols-3 gap-4">
           {projects.map((item) => (
-            <div className="max-w-full">
-              <div className="w-full">
+            <figure className="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+              <Link href="#">
                 <Image
+                  className="rounded-lg"
                   src={item.image}
-                  alt={item.name}
-                  width={400}
-                  height={120}
-                  className="object-cover"
+                  alt="image description"
+                  width={500}
+                  height={200}
                 />
-              </div>
-              <div>
-                <h1 className="text-[20px]">{item.name}</h1>
-                <p className="">{item.description}</p>
-                <Link href={item.url}>see more</Link>
-              </div>
-            </div>
+              </Link>
+              <figcaption className="absolute px-4 lowercase text-white bottom-6">
+                <h1 className="lg:text-[25px]">{item.name}</h1>
+                <p className="lg:text-[14px] mb-4">
+                  {item.description}
+                </p>
+                <Link
+                  href={item.url}
+                  className="bg-white text-black hover:bg-white/90 px-6 py-3 rounded-full block w-full text-center"
+                >
+                  See more
+                </Link>
+              </figcaption>
+            </figure>
           ))}
         </div>
       </section>
