@@ -96,7 +96,7 @@ export default function Navigation() {
         className="mx-auto flex bg-black justify-center items-center w-full py-6 px-6 lg:min-h-[600px]"
       >
         <div className="max-w-7xl text-white items-center justify-center text-center lg:text-[20px] text-[14px]">
-          <h1 className="lg:text-[35px] text-[20px] text-pink-300 mb-6">
+          <h1 className="lg:text-[35px] text-[25px] text-pink-300 mb-6">
             about me/
           </h1>
           <p className="mb-6">
@@ -125,14 +125,14 @@ export default function Navigation() {
         id="projects"
         className="mx-auto max-w-7xl bg-black justify-center items-center w-full py-6 px-6 lg:min-h-[600px]"
       >
-        <h1 className="lg:text-[35px] text-[20px] text-center text-pink-300 mb-6">
+        <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300 mb-6">
           projects i've worked on/
         </h1>
         <div className="grid lg:grid-cols-3 gap-6">
           {projects.map((item) => (
             <figure
               key={item.name}
-              className="relative max-w-full min-h-[400px] transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+              className="relative max-w-full min-h-[400px] transition-all duration-300 cursor-pointer filter lg:grayscale hover:grayscale-0"
             >
               <Link href="#">
                 <Image
@@ -169,7 +169,7 @@ export default function Navigation() {
         id="contact"
         className="m-auto max-w-7xl bg-black justify-center items-center w-full py-6 px-6 lg:min-h-[600px]"
       >
-        <h1 className="lg:text-[35px] text-[20px] text-center text-pink-300 mb-6">
+        <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300 mb-6">
           contact/
         </h1>
         <div className="grid lg:grid-cols-2 gap-4">
@@ -182,7 +182,7 @@ export default function Navigation() {
               height={400}
             />
           </div>
-          <div className="px-20">
+          <div className="lg:px-20">
             <h1 className="lg:text-[35px]">Need any of my services?</h1>
             <p className="lg:text-[20px]">Let me turn your ideas into code.</p>
             <div className="my-6">
