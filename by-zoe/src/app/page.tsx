@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { X, Linkedin, Github, } from "../../public/icons/icons";
 
 export default function Navigation() {
   const links = [
@@ -41,7 +42,12 @@ export default function Navigation() {
       url: "mailto:zoe@berthengineering.com",
     },
     { name: "Phone", value: "+12345678190", url: "tel:+12345678910" },
-    { name: "Resume", value: "", url: "#" },
+    { name: "Resume", value: "Have my profile at your fingertips", url: "#" },
+  ];
+  const socials = [
+    { name: "X", icon: <X />, url: "#", username: "byzoe.xo", },
+    { name: "LinkedIn", icon: <Linkedin /> , url: "#", username: "", },
+    { name: "Github", icon: <Github /> , url: "#", username: "zani0", },
   ];
   return (
     <>
@@ -167,8 +173,16 @@ export default function Navigation() {
               <ul>
                 {contacts.map((item) => (
                   <li key={item.name}>
-                    {item.name}: 
-                    <Link href={item.url}> {item.value}</Link>
+                    {item.name}:<Link href={item.url}> {item.value}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <ul className="flex">
+                {socials.map((item) => (
+                  <li key={item.name}>
+                    <Link href={item.url}>{item.icon}</Link>
                   </li>
                 ))}
               </ul>
