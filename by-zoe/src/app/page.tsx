@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navigation() {
   const links = [
@@ -8,10 +9,29 @@ export default function Navigation() {
     { label: "Contact", url: "#contact" },
   ];
   const projects = [
-    { name: "lorem", image: "", url: "#", description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit dignissimos excepturi recusandae voluptatibus, minima quidem rerum modi, dolorum omnis exercitationem eligendi enim explicabo deserunt fuga nobis pariatur. Obcaecati, inventore dignissimos!", category: "web development"},
-    { name: "lorem", image: "", url: "#", description: "lorem ipsum", category: "web development"},
-    { name: "lorem", image: "", url: "#", description: "lorem ipsum", category: "web development"}
-  ]
+    {
+      name: "lorem",
+      image: "/project.jpg",
+      url: "#",
+      description:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit dignissimos excepturi recusandae voluptatibus, minima quidem rerum modi, dolorum omnis exercitationem eligendi enim explicabo deserunt fuga nobis pariatur. Obcaecati, inventore dignissimos!",
+      category: "web development",
+    },
+    {
+      name: "lorem",
+      image: "/project.jpg",
+      url: "#",
+      description: "lorem ipsum",
+      category: "web development",
+    },
+    {
+      name: "lorem",
+      image: "/project.jpg",
+      url: "#",
+      description: "lorem ipsum",
+      category: "web development",
+    },
+  ];
   return (
     <>
       {/* navigation */}
@@ -35,6 +55,7 @@ export default function Navigation() {
           </div>
         </nav>
       </header>
+
       {/* hero */}
       <section
         id="home"
@@ -45,9 +66,12 @@ export default function Navigation() {
             everything/
           </h1>
           <h1 className="lg:text-[150px] text-[100px]">by zoe</h1>
-          <h1 className="lg:text-[25px] text-[20px] text-pink-300">.</h1>
+          <h1 className="lg:text-[25px] text-[20px] text-pink-300">
+            yes, i type in lowercase.
+          </h1>
         </div>
       </section>
+
       {/* about */}
       <section
         id="about"
@@ -77,6 +101,7 @@ export default function Navigation() {
           </p>
         </div>
       </section>
+
       {/* projects */}
       <section
         id="projects"
@@ -88,10 +113,20 @@ export default function Navigation() {
         <div className="grid lg:grid-cols-3 gap-4">
           {projects.map((item) => (
             <div className="max-w-full">
-              <image />
-              <h1 className="">{item.name}</h1>
-              <p className="">{item.description}</p>
-              <Link href={item.url}>see more</Link>
+              <div className="w-full">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  width={400}
+                  height={120}
+                  className="object-cover"
+                />
+              </div>
+              <div>
+                <h1 className="text-[20px]">{item.name}</h1>
+                <p className="">{item.description}</p>
+                <Link href={item.url}>see more</Link>
+              </div>
             </div>
           ))}
         </div>
