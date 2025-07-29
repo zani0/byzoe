@@ -9,12 +9,13 @@ export default function Navigation() {
   ];
   return (
     <>
-      {/* Navigation */}
+      {/* navigation */}
       <header className="bg-black">
-        <nav className="mx-auto flex items-center justify-center p-6 lg:px-12">
+        {/* desktop navigation */}
+        <nav className="hidden mx-auto lg:flex items-center lg:justify-center justify-between p-6 lg:px-16">
           <div className="flex lg:flex-1">
-            <Link className="text-white text-[20px]" href="">
-              by zoe.
+            <Link className="text-white text-[20px]" href="#">
+              by-zoe
             </Link>
           </div>
           <div className="">
@@ -29,11 +30,12 @@ export default function Navigation() {
           </div>
         </nav>
       </header>
-      {/* Hero */}
+      {/* hero */}
       <section className="w-full h-screen justify-center items-center flex">
-        <div className="text-center">
-          <h1>everything </h1>
-          <h1>by zoe</h1>
+        <div className="text-center justify-center items-center gap-y-0">
+          <h1 className="lg:text-[25px] text-[20px] text-pink-300">everything/</h1>
+          <h1 className="lg:text-[150px] text-[100px]">by zoe</h1>
+          <h1 className="lg:text-[25px] text-[20px] text-pink-300">.</h1>
         </div>
       </section>
     </>
