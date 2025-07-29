@@ -179,10 +179,10 @@ export default function Navigation() {
               </ul>
             </div>
             <div>
-              <ul className="flex">
+              <ul className="flex gap-2">
                 {socials.map((item) => (
                   <li key={item.name}>
-                    <Link href={item.url}>{item.icon}</Link>
+                    <Link className="flex w-[50px] h-[50px] bg-pink-300 hover:bg-pink-300/70 items-center justify-center rounded-full"  target="_blank" href={item.url}>{item.icon}</Link>
                   </li>
                 ))}
               </ul>

@@ -1,8 +1,8 @@
 export function Instagram(props: any) {
   return (
     <svg
-      width="80"
-      height="80"
+      width="25"
+      height="25"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -23,8 +23,8 @@ export function Instagram(props: any) {
 export function X(props: any) {
   return (
     <svg
-      width="80"
-      height="80"
+      width="25"
+      height="25"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +41,8 @@ export function X(props: any) {
 export function Github(props: any) {
   return (
     <svg
-      width="80"
-      height="80"
+      width="25"
+      height="25"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -59,8 +59,8 @@ export function Github(props: any) {
 export function Linkedin(props: any) {
   return (
     <svg
-      width="80"
-      height="80"
+      width="25"
+      height="25"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
