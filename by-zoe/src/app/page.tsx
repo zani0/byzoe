@@ -34,6 +34,15 @@ export default function Navigation() {
       category: "web development",
     },
   ];
+  const contacts = [
+    {
+      name: "Email",
+      value: "zoe@berthengineering.com",
+      url: "mailto:zoe@berthengineering.com",
+    },
+    { name: "Phone", value: "+12345678190", url: "tel:+12345678910" },
+    { name: "Resume", value: "", url: "#" },
+  ];
   return (
     <>
       {/* navigation */}
@@ -78,7 +87,7 @@ export default function Navigation() {
       {/* about */}
       <section
         id="about"
-        className="flex bg-black justify-center items-center w-full py-6 px-6 min-h-[400px]"
+        className="mx-auto flex bg-black justify-center items-center w-full py-6 px-6 min-h-[400px]"
       >
         <div className="max-w-7xl text-white items-center justify-center text-center lg:text-[20px] text-[14px]">
           <h1 className="lg:text-[35px] text-[20px] text-pink-300 mb-6">
@@ -113,14 +122,17 @@ export default function Navigation() {
         <h1 className="lg:text-[35px] text-[20px] text-center text-pink-300 mb-6">
           projects i've worked on/
         </h1>
-        <div className="grid lg:grid-cols-3 gap-4">
+        <div className="grid lg:grid-cols-3 gap-6">
           {projects.map((item) => (
-            <figure key={item.name} className="relative max-w-full min-h-[400px] transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0">
+            <figure
+              key={item.name}
+              className="relative max-w-full min-h-[400px] transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
+            >
               <Link href="#">
                 <Image
                   className="rounded-lg"
                   src={item.image}
-                  alt="image description"
+                  alt={item.name}
                   width={500}
                   height={200}
                 />
@@ -146,6 +158,23 @@ export default function Navigation() {
         <h1 className="lg:text-[35px] text-[20px] text-center text-pink-300 mb-6">
           contact/
         </h1>
+        <div className="grid lg:grid-cols-2">
+          <div></div>
+          <div>
+            <h1>Need any of my services?</h1>
+            <p>Let me turn your ideas into code.</p>
+            <div>
+              <ul>
+                {contacts.map((item) => (
+                  <li key={item.name}>
+                    {item.name}: 
+                    <Link href={item.url}> {item.value}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );
