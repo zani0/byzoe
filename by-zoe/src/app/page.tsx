@@ -174,8 +174,13 @@ export default function Navigation() {
             href={"/projects"}
           >
             <span>See all projects</span>
-            <i><ArrowAngularTopRight /></i>
+            <i>
+              <ArrowAngularTopRight />
+            </i>
           </Link>
+        </div>
+        <div className="flex items-center justify-center">
+          <hr className="my-20 w-[10%] border-t border-gray-300/30 border-2" />
         </div>
       </section>
       {/* contact */}
