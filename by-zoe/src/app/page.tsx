@@ -93,7 +93,7 @@ export default function Navigation() {
       {/* about */}
       <section
         id="about"
-        className="mx-auto flex bg-black justify-center items-center w-full py-6 px-6 min-h-[400px]"
+        className="mx-auto flex bg-black justify-center items-center w-full py-6 px-6 lg:min-h-[600px]"
       >
         <div className="max-w-7xl text-white items-center justify-center text-center lg:text-[20px] text-[14px]">
           <h1 className="lg:text-[35px] text-[20px] text-pink-300 mb-6">
@@ -123,7 +123,7 @@ export default function Navigation() {
       {/* projects */}
       <section
         id="projects"
-        className="mx-auto max-w-7xl bg-black justify-center items-center w-full py-6 px-6 min-h-[400px]"
+        className="mx-auto max-w-7xl bg-black justify-center items-center w-full py-6 px-6 lg:min-h-[600px]"
       >
         <h1 className="lg:text-[35px] text-[20px] text-center text-pink-300 mb-6">
           projects i've worked on/
@@ -160,20 +160,22 @@ export default function Navigation() {
         </div>
       </section>
       {/* contact */}
-      <section id="contact" className="">
+      <section id="contact" className="m-auto max-w-7xl bg-black justify-center items-center w-full py-6 px-6 lg:min-h-[600px]">
         <h1 className="lg:text-[35px] text-[20px] text-center text-pink-300 mb-6">
           contact/
         </h1>
-        <div className="grid lg:grid-cols-2">
-          <div></div>
-          <div>
-            <h1>Need any of my services?</h1>
-            <p>Let me turn your ideas into code.</p>
-            <div>
+        <div className="grid lg:grid-cols-2 gap-4">
+          <div className="w-full">
+            <Image src={"/project.jpg"} alt="" className="w-full h-[500px] object-cover" width={400} height={400} />
+          </div>
+          <div className="px-20">
+            <h1 className="lg:text-[35px]">Need any of my services?</h1>
+            <p className="lg:text-[20px]">Let me turn your ideas into code.</p>
+            <div className="my-6">
               <ul>
                 {contacts.map((item) => (
-                  <li key={item.name}>
-                    {item.name}:<Link href={item.url}> {item.value}</Link>
+                  <li className="mb-2 text-[18px]" key={item.name}>
+                    {item.name}: <Link className="hover:underline transition-all underline-offset-8" href={item.url}>{item.value}</Link>
                   </li>
                 ))}
               </ul>
@@ -182,7 +184,7 @@ export default function Navigation() {
               <ul className="flex gap-2">
                 {socials.map((item) => (
                   <li key={item.name}>
-                    <Link className="flex w-[50px] h-[50px] bg-pink-300 hover:bg-pink-300/70 items-center justify-center rounded-full"  target="_blank" href={item.url}>{item.icon}</Link>
+                    <Link className="flex w-[50px] h-[50px] bg-pink-300 hover:bg-pink-300/70 transition-all items-center justify-center rounded-full"  target="_blank" href={item.url}>{item.icon}</Link>
                   </li>
                 ))}
               </ul>
