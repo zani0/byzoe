@@ -145,6 +145,7 @@ export default function Navigation() {
               </Link>
               <figcaption className="absolute px-4 lowercase text-white bottom-6">
                 <h1 className="lg:text-[25px] text-[18px]">{item.name}</h1>
+                <div className="bg-gray-300 max-w-[160px] px-6 py-2 rounded-full"><p className="text-[12px] text-center text-pink-300">{item.category}</p></div>
                 <p className="lg:text-[14px] text-[14px] mb-4">
                   {item.description}
                 </p>
@@ -190,6 +191,12 @@ export default function Navigation() {
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+      {/* footer */}
+      <section id="footer" className="py-6">
+        <div className="text-center">
+          <p className="text-white">&copy; 2025 by zoe.</p>
         </div>
       </section>
     </>
