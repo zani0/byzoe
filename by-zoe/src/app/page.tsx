@@ -15,7 +15,7 @@ export default function Navigation() {
   return (
     <>
       {/* navigation */}
-      <header className="bg-black">
+      <header className="bg-black mx-auto sticky top-0">
         {/* desktop navigation */}
         <nav className="hidden mx-auto lg:flex items-center lg:justify-center justify-between p-6 lg:px-16">
           <div className="flex lg:flex-1">
@@ -82,12 +82,12 @@ export default function Navigation() {
         id="projects"
         className="mx-auto max-w-7xl bg-black justify-center items-center w-full py-6 px-6 min-h-[400px]"
       >
-        <h1 className="lg:text-[25px] text-[20px] text-pink-300 mb-6">
+        <h1 className="lg:text-[25px] text-[20px] text-center text-pink-300 mb-6">
           projects i've worked on/
         </h1>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid lg:grid-cols-3 gap-4">
           {projects.map((item) => (
-            <div className="col-span-4">
+            <div className="max-w-full">
               <image />
               <h1 className="">{item.name}</h1>
               <p className="">{item.description}</p>
