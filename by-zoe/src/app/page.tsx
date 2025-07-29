@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { X, Linkedin, Github, } from "../../public/icons/icons";
+import { X, Linkedin, Github } from "../../public/icons/icons";
 
 export default function Navigation() {
   const links = [
@@ -45,9 +45,9 @@ export default function Navigation() {
     { name: "Resume", value: "Have my profile at your fingertips", url: "#" },
   ];
   const socials = [
-    { name: "X", icon: <X />, url: "#", username: "byzoe.xo", },
-    { name: "LinkedIn", icon: <Linkedin /> , url: "#", username: "", },
-    { name: "Github", icon: <Github /> , url: "#", username: "zani0", },
+    { name: "X", icon: <X />, url: "#", username: "byzoe.xo" },
+    { name: "LinkedIn", icon: <Linkedin />, url: "#", username: "" },
+    { name: "Github", icon: <Github />, url: "#", username: "zani0" },
   ];
   return (
     <>
@@ -145,7 +145,11 @@ export default function Navigation() {
               </Link>
               <figcaption className="absolute px-4 lowercase text-white bottom-6">
                 <h1 className="lg:text-[25px] text-[18px]">{item.name}</h1>
-                <div className="bg-gray-300 max-w-[160px] px-6 py-2 rounded-full"><p className="text-[12px] text-center text-pink-300">{item.category}</p></div>
+                <div className="bg-pink-300 my-1 px-2 py-1 max-w-[120px] rounded-full items-center">
+                  <p className="text-[10px] text-center text-white">
+                    {item.category}
+                  </p>
+                </div>
                 <p className="lg:text-[14px] text-[14px] mb-4">
                   {item.description}
                 </p>
@@ -161,13 +165,22 @@ export default function Navigation() {
         </div>
       </section>
       {/* contact */}
-      <section id="contact" className="m-auto max-w-7xl bg-black justify-center items-center w-full py-6 px-6 lg:min-h-[600px]">
+      <section
+        id="contact"
+        className="m-auto max-w-7xl bg-black justify-center items-center w-full py-6 px-6 lg:min-h-[600px]"
+      >
         <h1 className="lg:text-[35px] text-[20px] text-center text-pink-300 mb-6">
           contact/
         </h1>
         <div className="grid lg:grid-cols-2 gap-4">
           <div className="w-full">
-            <Image src={"/project.jpg"} alt="" className="w-full h-[500px] object-cover" width={400} height={400} />
+            <Image
+              src={"/project.jpg"}
+              alt=""
+              className="w-full h-[500px] object-cover"
+              width={400}
+              height={400}
+            />
           </div>
           <div className="px-20">
             <h1 className="lg:text-[35px]">Need any of my services?</h1>
@@ -176,7 +189,13 @@ export default function Navigation() {
               <ul>
                 {contacts.map((item) => (
                   <li className="mb-2 text-[18px]" key={item.name}>
-                    {item.name}: <Link className="hover:underline transition-all underline-offset-8" href={item.url}>{item.value}</Link>
+                    {item.name}:{" "}
+                    <Link
+                      className="hover:underline transition-all underline-offset-8"
+                      href={item.url}
+                    >
+                      {item.value}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -185,7 +204,13 @@ export default function Navigation() {
               <ul className="flex gap-2">
                 {socials.map((item) => (
                   <li key={item.name}>
-                    <Link className="flex w-[50px] h-[50px] bg-pink-300 hover:bg-pink-300/70 transition-all items-center justify-center rounded-full"  target="_blank" href={item.url}>{item.icon}</Link>
+                    <Link
+                      className="flex w-[50px] h-[50px] bg-pink-300 hover:bg-pink-300/70 transition-all items-center justify-center rounded-full"
+                      target="_blank"
+                      href={item.url}
+                    >
+                      {item.icon}
+                    </Link>
                   </li>
                 ))}
               </ul>
