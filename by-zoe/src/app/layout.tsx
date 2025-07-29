@@ -5,7 +5,7 @@ import "./globals.css";
 const bricolageGrotesque = Bricolage_Grotesque({
   variable: "--font-bricolage-grotesque",
   subsets: ["latin"],
-  weight: "400"
+  weight: "500"
 });
 
 export const metadata: Metadata = {
