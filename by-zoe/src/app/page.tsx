@@ -101,7 +101,7 @@ export default function Navigation() {
         className="mx-auto flex bg-black justify-center items-center w-full py-6 px-6 lg:min-h-[600px]"
       >
         <div className="max-w-7xl text-white items-center justify-center text-center lg:text-[20px] text-[14px]">
-          <h1 className="lg:text-[35px] text-[25px] text-pink-300 mb-6">
+          <h1 className="lg:text-[35px] text-[25px] text-pink-300 mb-12">
             about me/
           </h1>
           <p className="mb-6">
@@ -130,7 +130,7 @@ export default function Navigation() {
         id="projects"
         className="mx-auto max-w-7xl bg-black justify-center items-center w-full py-6 px-6 lg:min-h-[600px]"
       >
-        <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300 mb-6">
+        <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300 mb-12">
           projects i've worked on/
         </h1>
         <div className="grid lg:grid-cols-3 gap-6">
@@ -168,9 +168,9 @@ export default function Navigation() {
             </figure>
           ))}
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center mt-12">
           <Link
-            className="bg-pink-300 w-[20vw] inline-flex justify-between items-center transition-all hover:bg-white active:bg-gray-50 px-6 py-3 rounded-full text-black text-[16px] text-center"
+            className="bg-black w-[10vw] border-white hover:border-white/80 border-solid border-2 inline-flex justify-between items-center transition-all hover:bg-black/60 active:bg-gray-50 px-6 py-3 rounded-full text-white hover:text-white/80 text-[16px] text-center"
             href={"/projects"}
           >
             <span>See all projects</span>
@@ -183,7 +183,7 @@ export default function Navigation() {
         id="contact"
         className="m-auto max-w-7xl bg-black justify-center items-center w-full py-6 px-6 lg:min-h-[600px]"
       >
-        <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300 mb-6">
+        <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300 mb-12">
           contact/
         </h1>
         <div className="grid lg:grid-cols-2 gap-4">
