@@ -1,6 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { X, Linkedin, Github } from "../../public/icons/icons";
+import {
+  X,
+  Linkedin,
+  Github,
+  ArrowAngularTopRight,
+} from "../../public/icons/icons";
 
 export default function Navigation() {
   const links = [
@@ -52,7 +57,7 @@ export default function Navigation() {
   return (
     <>
       {/* navigation */}
-      <header className="bg-black/50 backdrop-blur-lg mx-auto sticky top-0 z-999">
+      <header className="bg-black/50 backdrop-blur-md mx-auto sticky top-0 z-999">
         {/* desktop navigation */}
         <nav className="hidden mx-auto lg:flex items-center lg:justify-center justify-between p-6 lg:px-16 max-w-7xl">
           <div className="flex lg:flex-1">
@@ -65,7 +70,7 @@ export default function Navigation() {
               <Link
                 key={item.label}
                 href={item.url}
-                className="bg-pink-300 hover:bg-white active:bg-gray-50 px-6 py-2 rounded-full text-black mr-2 text-[14px] lowercase"
+                className="bg-pink-300 hover:bg-white transition-all active:bg-gray-50 px-6 py-2 rounded-full text-black mr-2 text-[14px]"
               >
                 / {item.label}
               </Link>
@@ -85,7 +90,7 @@ export default function Navigation() {
           </h1>
           <h1 className="lg:text-[150px] text-[100px]">by zoe</h1>
           <h1 className="lg:text-[25px] text-[20px] text-pink-300">
-            yes, i type in lowercase.
+            (yes, i type in lowercase.)
           </h1>
         </div>
       </section>
@@ -162,6 +167,15 @@ export default function Navigation() {
               </figcaption>
             </figure>
           ))}
+        </div>
+        <div className="flex items-center justify-center">
+          <Link
+            className="bg-pink-300 w-[20vw] inline-flex justify-between items-center transition-all hover:bg-white active:bg-gray-50 px-6 py-3 rounded-full text-black text-[16px] text-center"
+            href={"/projects"}
+          >
+            <span>See all projects</span>
+            <i><ArrowAngularTopRight /></i>
+          </Link>
         </div>
       </section>
       {/* contact */}

@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bricolageGrotesque.variable} antialiased lowercase`}
+        className={`${bricolageGrotesque.variable} antialiased lowercase scroll-smooth`}
       >
         {children}
       </body>
