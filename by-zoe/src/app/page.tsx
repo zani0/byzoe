@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navigation() {
   const links = [
-    { label: "Home", url: "#" },
+    { label: "Home", url: "#home" },
     { label: "About", url: "#about" },
     { label: "Projects", url: "#projects" },
     { label: "Contact", url: "#contact" },
@@ -31,11 +31,42 @@ export default function Navigation() {
         </nav>
       </header>
       {/* hero */}
-      <section className="w-full h-screen justify-center items-center flex">
+      <section
+        id="home"
+        className="bg-black w-full h-screen justify-center items-center flex"
+      >
         <div className="text-center justify-center items-center gap-y-0">
-          <h1 className="lg:text-[25px] text-[20px] text-pink-300">everything/</h1>
+          <h1 className="lg:text-[25px] text-[20px] text-pink-300">
+            everything/
+          </h1>
           <h1 className="lg:text-[150px] text-[100px]">by zoe</h1>
           <h1 className="lg:text-[25px] text-[20px] text-pink-300">.</h1>
+        </div>
+      </section>
+      {/* about */}
+      <section
+        id="about"
+        className="flex bg-black justify-center items-center w-full py-6 px-6 min-h-[400px]"
+      >
+        <div className="max-w-7xl text-white items-center justify-center text-center lg:text-[20px] text-[14px]">
+          <p className="mb-6">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+            dignissimos excepturi recusandae voluptatibus, minima quidem rerum
+            modi, dolorum omnis exercitationem eligendi enim explicabo deserunt
+            fuga nobis pariatur. Obcaecati, inventore dignissimos!
+          </p>
+          <p className="mb-6">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
+            suscipit quos repudiandae. Molestiae rem autem voluptatum, quibusdam
+            blanditiis aliquid fuga adipisci cupiditate quo, illo repellendus
+            ipsam, dolore alias. Similique, reiciendis.
+          </p>
+          <p className="mb-6">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+            dignissimos excepturi recusandae voluptatibus, minima quidem rerum
+            modi, dolorum omnis exercitationem eligendi enim explicabo deserunt
+            fuga nobis pariatur. Obcaecati, inventore dignissimos!
+          </p>
         </div>
       </section>
     </>
