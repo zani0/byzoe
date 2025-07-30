@@ -11,6 +11,7 @@ export default function Navigation() {
   const links = [
     { label: "Home", url: "#home" },
     { label: "About", url: "#about" },
+    { label: "Services", url: "#services" },
     { label: "Projects", url: "#projects" },
     { label: "Contact", url: "#contact" },
   ];
@@ -40,13 +41,40 @@ export default function Navigation() {
       category: "web development",
     },
   ];
+  const services = [
+    {
+      name: "Web development",
+    },
+  ];
+  const frameworks = [
+    {
+      name: "React",
+      logo: "/logos/React.png",
+    },
+    {
+      name: "WordPress",
+      logo: "/logos/Wordpress.png",
+    },
+    {
+      name: "Canva",
+      logo: "/logos/Canva.png",
+    },
+    {
+      name: "JavaScript",
+      logo: "/logos/JavaScript.png",
+    },
+    {
+      name: "Capcut",
+      logo: "/logos/Capcut.jpg",
+    },
+  ];
   const contacts = [
     {
       name: "Email",
       value: "zoe@berthengineering.com",
       url: "mailto:zoe@berthengineering.com",
     },
-    { name: "Phone", value: "+12345678190", url: "tel:+12345678910" },
+    { name: "Phone", value: "+123 4567 81910", url: "tel:+12345678910" },
     { name: "Resume", value: "Have my profile at your fingertips", url: "#" },
   ];
   const socials = [
@@ -125,6 +153,28 @@ export default function Navigation() {
         </div>
       </section>
 
+      {/* frameworks */}
+      <section
+        id="frameworks"
+        className="mx-auto flex-row items-center justify-center min-h-[300px]"
+      >
+        <div className="mx-auto max-w-7xl">
+          <ul className="flex justify-center items-center gap-4">
+            {frameworks.map((item) => (
+              <li className="">
+                <Image src={item.logo} alt={item.name} width={70} height={70} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section id="services" className="">
+        <div className="grid lg:grid-cols-3 gap-6">
+          <div></div>
+        </div>
+      </section>
+
       {/* projects */}
       <section
         id="projects"
@@ -180,7 +230,7 @@ export default function Navigation() {
           </Link>
         </div>
         <div className="flex items-center justify-center">
-          <hr className="my-20 w-[10%] border-t border-gray-300/30 border-2" />
+          <hr className="my-28 w-[10%] border-t border-gray-300/30 border-2" />
         </div>
       </section>
       {/* contact */}
