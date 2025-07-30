@@ -5,6 +5,7 @@ import {
   Linkedin,
   Github,
   ArrowAngularTopRight,
+  Laptop2,
 } from "../../public/icons/icons";
 
 export default function Navigation() {
@@ -189,9 +190,42 @@ export default function Navigation() {
         </div>
       </section>
 
-      <section id="services" className="">
+      {/* projects */}
+      <section id="services" className="mx-auto max-w-7xl items-center justify-center flex-row min-h-[200px]">
+        <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300 mb-12">
+          here's what i do/
+        </h1>
         <div className="grid lg:grid-cols-3 gap-6">
-          <div></div>
+          <div>
+            <Laptop2 />
+            <h1 className="text-[24px]">lorem ipsum</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              sit voluptatum omnis tempore assumenda consectetur exercitationem
+              ex aspernatur quia, quam ratione expedita reiciendis temporibus
+              veniam quae molestiae inventore. Ducimus, enim.
+            </p>
+          </div>
+          <div>
+            <Laptop2 />
+            <h1 className="text-[24px]">lorem ipsum</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              sit voluptatum omnis tempore assumenda consectetur exercitationem
+              ex aspernatur quia, quam ratione expedita reiciendis temporibus
+              veniam quae molestiae inventore. Ducimus, enim.
+            </p>
+          </div>
+          <div>
+            <Laptop2 />
+            <h1 className="text-[24px]">lorem ipsum </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              sit voluptatum omnis tempore assumenda consectetur exercitationem
+              ex aspernatur quia, quam ratione expedita reiciendis temporibus
+              veniam quae molestiae inventore. Ducimus, enim.
+            </p>
+          </div>
         </div>
       </section>
 
