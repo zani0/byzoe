@@ -60,8 +60,28 @@ export default function Navigation() {
       logo: "/logos/Canva.png",
     },
     {
+      name: "CSS",
+      logo: "/logos/CSS.png",
+    },
+    {
       name: "JavaScript",
       logo: "/logos/JavaScript.png",
+    },
+    {
+      name: "Figma",
+      logo: "/logos/Figma.png",
+    },
+    {
+      name: "HTML",
+      logo: "/logos/HTML.png",
+    },
+    {
+      name: "TypeScript",
+      logo: "/logos/TypeScript.png",
+    },
+    {
+      name: "Squarespace",
+      logo: "/logos/Squarespace.png",
     },
     {
       name: "Capcut",
@@ -156,10 +176,10 @@ export default function Navigation() {
       {/* frameworks */}
       <section
         id="frameworks"
-        className="mx-auto flex-row items-center justify-center min-h-[300px]"
+        className="mx-auto flex-row items-center justify-center min-h-[200px]"
       >
         <div className="mx-auto max-w-7xl">
-          <ul className="flex justify-center items-center gap-4">
+          <ul className="flex justify-center items-center gap-7">
             {frameworks.map((item) => (
               <li className="">
                 <Image src={item.logo} alt={item.name} width={70} height={70} />
