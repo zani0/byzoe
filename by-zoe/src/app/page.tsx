@@ -191,14 +191,20 @@ export default function Navigation() {
       </section>
 
       {/* projects */}
-      <section id="services" className="mx-auto max-w-7xl items-center justify-center flex-row min-h-[200px]">
-        <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300 mb-12">
-          here's what i do/
-        </h1>
+      <section
+        id="services"
+        className="mx-auto my-auto max-w-7xl items-center justify-center flex-row min-h-[600px]"
+      >
+        <div className="text-center mb-12">
+          <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300">
+            here's what i do/
+          </h1>
+          <p>I'm a bit of a jack of all trades, master of all</p>
+        </div>
         <div className="grid lg:grid-cols-3 gap-6">
           <div>
             <Laptop2 />
-            <h1 className="text-[24px]">lorem ipsum</h1>
+            <h1 className="text-[24px]">Web development</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
               sit voluptatum omnis tempore assumenda consectetur exercitationem
@@ -208,7 +214,7 @@ export default function Navigation() {
           </div>
           <div>
             <Laptop2 />
-            <h1 className="text-[24px]">lorem ipsum</h1>
+            <h1 className="text-[24px]">App development</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
               sit voluptatum omnis tempore assumenda consectetur exercitationem
@@ -218,7 +224,17 @@ export default function Navigation() {
           </div>
           <div>
             <Laptop2 />
-            <h1 className="text-[24px]">lorem ipsum </h1>
+            <h1 className="text-[24px]">Grpahic design</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              sit voluptatum omnis tempore assumenda consectetur exercitationem
+              ex aspernatur quia, quam ratione expedita reiciendis temporibus
+              veniam quae molestiae inventore. Ducimus, enim.
+            </p>
+          </div>
+          <div>
+            <Laptop2 />
+            <h1 className="text-[24px]">Video editing</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
               sit voluptatum omnis tempore assumenda consectetur exercitationem
