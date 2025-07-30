@@ -237,17 +237,17 @@ export default function Navigation() {
           <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300">
             Here's what i do/
           </h1>
-          <p className="lg:text-[20px] text-[15px]">I'm a bit of a Jack of all trades, master of all</p>
+          <p className="lg:text-[20px] text-[14px]">I'm a bit of a Jack of all trades, master of all</p>
         </div>
         <div className="grid lg:grid-cols-3 gap-6">
           {services.map((item) => (
             <div
               key={item.name}
-              className="p-12 border-2 border-white/10 rounded-[20px]"
+              className="lg:p-12 p-8 border-2 border-white/10 rounded-[20px]"
             >
               <div className="mb-2">{item.icon}</div>
-              <h1 className="text-[24px]">{item.name}</h1>
-              <p>{item.description}</p>
+              <h1 className="lg:text-[24px] text-[18px]">{item.name}</h1>
+              <p className="lg:text-[18px] text-[14px]">{item.description}</p>
             </div>
           ))}
         </div>
@@ -330,13 +330,13 @@ export default function Navigation() {
               height={400}
             />
           </div>
-          <div className="lg:px-20">
-            <h1 className="lg:text-[35px]">Need any of my services?</h1>
-            <p className="lg:text-[20px]">Let me turn your ideas into code.</p>
+          <div className="lg:px-20 lg:text-left text-center">
+            <h1 className="lg:text-[35px] text-[22px]">Need any of my services?</h1>
+            <p className="lg:text-[20px] text-[16px]">Let me turn your ideas into code.</p>
             <div className="my-6">
               <ul>
                 {contacts.map((item) => (
-                  <li className="mb-2 text-[18px]" key={item.name}>
+                  <li className="mb-2 lg:text-[18px] text-[16px]" key={item.name}>
                     {item.name}:{" "}
                     <Link
                       className="hover:underline transition-all underline-offset-8"
