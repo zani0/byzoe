@@ -231,9 +231,9 @@ export default function Navigation() {
       {/* services */}
       <section
         id="services"
-        className="mx-auto my-auto max-w-7xl items-center justify-center flex-row lg:min-h-[700px]"
+        className="mx-auto my-auto py-24 max-w-7xl items-center justify-center flex-row lg:min-h-[700px]"
       >
-        <div className="text-center mb-12">
+        <div className="text-center mb-24">
           <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300">
             here's what i do/
           </h1>
@@ -241,12 +241,10 @@ export default function Navigation() {
         </div>
         <div className="grid lg:grid-cols-3 gap-6">
           {services.map((item) => (
-            <div key={item.name}>
+            <div key={item.name} className="p-12 border-2 border-white/10 rounded-[20px]">
               {item.icon}
               <h1 className="text-[24px]">{item.name}</h1>
-              <p>
-                {item.description}
-              </p>
+              <p>{item.description}</p>
             </div>
           ))}
         </div>
