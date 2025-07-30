@@ -220,8 +220,8 @@ export default function Navigation() {
         <div className="mx-auto max-w-7xl">
           <ul className="m-auto lg:flex grid grid-cols-5 justify-center items-center gap-7">
             {frameworks.map((item) => (
-              <li key={item.name} className="col-">
-                <Image src={item.logo} alt={item.name} width={70} height={70} className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px]" />
+              <li key={item.name} className="">
+                <Image src={item.logo} alt={item.name} width={70} height={70} className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] object-contain" />
               </li>
             ))}
           </ul>
