@@ -50,6 +50,39 @@ export default function Navigation() {
   const services = [
     {
       name: "Web development",
+      icon: <Laptop2 />,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis facilis esse amet labore dolore ratione fuga itaque perferendis. Aperiam labore praesentium autem laboriosam incidunt reprehenderit illo atque explicabo porro adipisci?",
+    },
+    {
+      name: "App development",
+      icon: <PlayStore />,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis facilis esse amet labore dolore ratione fuga itaque perferendis. Aperiam labore praesentium autem laboriosam incidunt reprehenderit illo atque explicabo porro adipisci?",
+    },
+    {
+      name: "Graphic design",
+      icon: <Brush2 />,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis facilis esse amet labore dolore ratione fuga itaque perferendis. Aperiam labore praesentium autem laboriosam incidunt reprehenderit illo atque explicabo porro adipisci?",
+    },
+    {
+      name: "Video editing",
+      icon: <Play />,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis facilis esse amet labore dolore ratione fuga itaque perferendis. Aperiam labore praesentium autem laboriosam incidunt reprehenderit illo atque explicabo porro adipisci?",
+    },
+    {
+      name: "UI/UX",
+      icon: <ColourPalette3 />,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis facilis esse amet labore dolore ratione fuga itaque perferendis. Aperiam labore praesentium autem laboriosam incidunt reprehenderit illo atque explicabo porro adipisci?",
+    },
+    {
+      name: "Creative writing",
+      icon: <Pencil1 />,
+      description:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis facilis esse amet labore dolore ratione fuga itaque perferendis. Aperiam labore praesentium autem laboriosam incidunt reprehenderit illo atque explicabo porro adipisci?",
     },
   ];
   const frameworks = [
@@ -195,7 +228,7 @@ export default function Navigation() {
         </div>
       </section>
 
-      {/* projects */}
+      {/* services */}
       <section
         id="services"
         className="mx-auto my-auto max-w-7xl items-center justify-center flex-row lg:min-h-[700px]"
@@ -207,66 +240,15 @@ export default function Navigation() {
           <p>I'm a bit of a jack of all trades, master of all</p>
         </div>
         <div className="grid lg:grid-cols-3 gap-6">
-          <div>
-            <Laptop2 />
-            <h1 className="text-[24px]">Web development</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              sit voluptatum omnis tempore assumenda consectetur exercitationem
-              ex aspernatur quia, quam ratione expedita reiciendis temporibus
-              veniam quae molestiae inventore. Ducimus, enim.
-            </p>
-          </div>
-          <div>
-            <PlayStore />
-            <h1 className="text-[24px]">App development</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              sit voluptatum omnis tempore assumenda consectetur exercitationem
-              ex aspernatur quia, quam ratione expedita reiciendis temporibus
-              veniam quae molestiae inventore. Ducimus, enim.
-            </p>
-          </div>
-          <div>
-            <Brush2 />
-            <h1 className="text-[24px]">Graphic design</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              sit voluptatum omnis tempore assumenda consectetur exercitationem
-              ex aspernatur quia, quam ratione expedita reiciendis temporibus
-              veniam quae molestiae inventore. Ducimus, enim.
-            </p>
-          </div>
-          <div>
-            <Play />
-            <h1 className="text-[24px]">Video editing</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              sit voluptatum omnis tempore assumenda consectetur exercitationem
-              ex aspernatur quia, quam ratione expedita reiciendis temporibus
-              veniam quae molestiae inventore. Ducimus, enim.
-            </p>
-          </div>
-          <div>
-            <ColourPalette3 />
-            <h1 className="text-[24px]">UI/UX design</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              sit voluptatum omnis tempore assumenda consectetur exercitationem
-              ex aspernatur quia, quam ratione expedita reiciendis temporibus
-              veniam quae molestiae inventore. Ducimus, enim.
-            </p>
-          </div>
-          <div>
-            <Pencil1 />
-            <h1 className="text-[24px]">Creative writing</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              sit voluptatum omnis tempore assumenda consectetur exercitationem
-              ex aspernatur quia, quam ratione expedita reiciendis temporibus
-              veniam quae molestiae inventore. Ducimus, enim.
-            </p>
-          </div>
+          {services.map((item) => (
+            <div key={item.name}>
+              {item.icon}
+              <h1 className="text-[24px]">{item.name}</h1>
+              <p>
+                {item.description}
+              </p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -328,6 +310,7 @@ export default function Navigation() {
           <hr className="my-28 w-[10%] border-t border-gray-300/30 border-2" />
         </div>
       </section>
+
       {/* contact */}
       <section
         id="contact"
