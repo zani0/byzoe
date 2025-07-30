@@ -6,6 +6,11 @@ import {
   Github,
   ArrowAngularTopRight,
   Laptop2,
+  PlayStore,
+  Brush2,
+  Play,
+  ColourPalette3,
+  Pencil1,
 } from "../../public/icons/icons";
 
 export default function Navigation() {
@@ -108,7 +113,7 @@ export default function Navigation() {
       {/* navigation */}
       <header className="bg-black/50 backdrop-blur-md mx-auto sticky top-0 z-999">
         {/* desktop navigation */}
-        <nav className="hidden mx-auto lg:flex items-center lg:justify-center justify-between p-6 lg:px-16 max-w-7xl">
+        <nav className="hidden mx-auto lg:flex items-center lg:justify-center justify-between p-6 max-w-7xl">
           <div className="flex lg:flex-1">
             <Link className="text-white text-[20px]" href="#">
               by-zoe
@@ -182,7 +187,7 @@ export default function Navigation() {
         <div className="mx-auto max-w-7xl">
           <ul className="flex justify-center items-center gap-7">
             {frameworks.map((item) => (
-              <li className="">
+              <li key={item.name} className="">
                 <Image src={item.logo} alt={item.name} width={70} height={70} />
               </li>
             ))}
@@ -193,7 +198,7 @@ export default function Navigation() {
       {/* projects */}
       <section
         id="services"
-        className="mx-auto my-auto max-w-7xl items-center justify-center flex-row min-h-[600px]"
+        className="mx-auto my-auto max-w-7xl items-center justify-center flex-row lg:min-h-[700px]"
       >
         <div className="text-center mb-12">
           <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300">
@@ -213,7 +218,7 @@ export default function Navigation() {
             </p>
           </div>
           <div>
-            <Laptop2 />
+            <PlayStore />
             <h1 className="text-[24px]">App development</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
@@ -223,8 +228,8 @@ export default function Navigation() {
             </p>
           </div>
           <div>
-            <Laptop2 />
-            <h1 className="text-[24px]">Grpahic design</h1>
+            <Brush2 />
+            <h1 className="text-[24px]">Graphic design</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
               sit voluptatum omnis tempore assumenda consectetur exercitationem
@@ -233,8 +238,28 @@ export default function Navigation() {
             </p>
           </div>
           <div>
-            <Laptop2 />
+            <Play />
             <h1 className="text-[24px]">Video editing</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              sit voluptatum omnis tempore assumenda consectetur exercitationem
+              ex aspernatur quia, quam ratione expedita reiciendis temporibus
+              veniam quae molestiae inventore. Ducimus, enim.
+            </p>
+          </div>
+          <div>
+            <ColourPalette3 />
+            <h1 className="text-[24px]">UI/UX design</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              sit voluptatum omnis tempore assumenda consectetur exercitationem
+              ex aspernatur quia, quam ratione expedita reiciendis temporibus
+              veniam quae molestiae inventore. Ducimus, enim.
+            </p>
+          </div>
+          <div>
+            <Pencil1 />
+            <h1 className="text-[24px]">Creative writing</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
               sit voluptatum omnis tempore assumenda consectetur exercitationem
