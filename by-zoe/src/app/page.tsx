@@ -231,13 +231,13 @@ export default function Navigation() {
       {/* services */}
       <section
         id="services"
-        className="mx-auto my-auto py-24 max-w-7xl items-center justify-center flex-row lg:min-h-[700px]"
+        className="mx-auto my-auto py-24 lg:px-0 px-6 max-w-7xl items-center justify-center flex-row lg:min-h-[700px]"
       >
         <div className="text-center mb-24">
           <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300">
             here's what i do/
           </h1>
-          <p>I'm a bit of a jack of all trades, master of all</p>
+          <p className="text-[20px]">I'm a bit of a jack of all trades, master of all</p>
         </div>
         <div className="grid lg:grid-cols-3 gap-6">
           {services.map((item) => (
