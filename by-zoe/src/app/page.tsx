@@ -235,9 +235,9 @@ export default function Navigation() {
       >
         <div className="text-center mb-24">
           <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300">
-            here's what i do/
+            Here's what i do/
           </h1>
-          <p className="lg:text-[20px] text-[15px]">I'm a bit of a jack of all trades, master of all</p>
+          <p className="lg:text-[20px] text-[15px]">I'm a bit of a Jack of all trades, master of all</p>
         </div>
         <div className="grid lg:grid-cols-3 gap-6">
           {services.map((item) => (
@@ -298,7 +298,7 @@ export default function Navigation() {
         </div>
         <div className="flex items-center justify-center mt-12">
           <Link
-            className="bg-black w-[10vw] border-white hover:border-white/80 border-solid border-2 inline-flex justify-between items-center transition-all hover:bg-black/60 active:bg-gray-50 px-6 py-3 rounded-full text-white hover:text-white/80 text-[16px] text-center"
+            className="bg-black lg:w-[10vw] border-white hover:border-white/80 border-solid border-2 inline-flex justify-between items-center transition-all hover:bg-black/60 active:bg-gray-50 px-6 py-3 rounded-full text-white hover:text-white/80 text-[16px] text-center"
             href={"/projects"}
           >
             <span>See all projects</span>
@@ -349,7 +349,7 @@ export default function Navigation() {
               </ul>
             </div>
             <div>
-              <ul className="flex gap-2">
+              <ul className="flex gap-2 items-center justify-center">
                 {socials.map((item) => (
                   <li key={item.name}>
                     <Link
@@ -366,6 +366,7 @@ export default function Navigation() {
           </div>
         </div>
       </section>
+
       {/* footer */}
       <section id="footer" className="py-6">
         <div className="text-center">
