@@ -185,7 +185,7 @@ export default function Navigation() {
       {/* about */}
       <section
         id="about"
-        className="mx-auto flex bg-black justify-center items-center w-full py-6 px-6 lg:min-h-[600px]"
+        className="mx-auto flex bg-black justify-center items-center w-full py-6 lg:px-6 px-8 lg:min-h-[600px]"
       >
         <div className="max-w-7xl text-white items-center justify-center text-center lg:text-[20px] text-[14px]">
           <h1 className="lg:text-[35px] text-[25px] text-pink-300 mb-12">
@@ -215,13 +215,13 @@ export default function Navigation() {
       {/* frameworks */}
       <section
         id="frameworks"
-        className="mx-auto items-center justify-center px-6 min-h-[200px]"
+        className="mx-auto items-center justify-center lg:px-6 px-12 min-h-[200px]"
       >
         <div className="mx-auto max-w-7xl">
           <ul className="m-auto lg:flex grid grid-cols-5 justify-center items-center gap-7">
             {frameworks.map((item) => (
               <li key={item.name} className="col-">
-                <Image src={item.logo} alt={item.name} width={70} height={70} />
+                <Image src={item.logo} alt={item.name} width={70} height={70} className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px]" />
               </li>
             ))}
           </ul>
