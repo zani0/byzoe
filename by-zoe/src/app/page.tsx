@@ -241,8 +241,11 @@ export default function Navigation() {
         </div>
         <div className="grid lg:grid-cols-3 gap-6">
           {services.map((item) => (
-            <div key={item.name} className="p-12 border-2 border-white/10 rounded-[20px]">
-              {item.icon}
+            <div
+              key={item.name}
+              className="p-12 border-2 border-white/10 rounded-[20px]"
+            >
+              <div className="mb-2">{item.icon}</div>
               <h1 className="text-[24px]">{item.name}</h1>
               <p>{item.description}</p>
             </div>

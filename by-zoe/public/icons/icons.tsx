@@ -123,8 +123,8 @@ export function ArrowAngularTopRight(props: any) {
 export function Laptop2(props: any) {
   return (
     <svg
-      width="80"
-      height="80"
+      width="50"
+      height="50"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -143,8 +143,8 @@ export function Laptop2(props: any) {
 export function PlayStore(props: any) {
   return (
     <svg
-      width="80"
-      height="80"
+      width="50"
+      height="50"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -161,8 +161,8 @@ export function PlayStore(props: any) {
 export function Brush2(props: any) {
   return (
     <svg
-      width="80"
-      height="80"
+      width="50"
+      height="50"
       viewBox="0 0 25 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -181,8 +181,8 @@ export function Brush2(props: any) {
 export function Play(props: any) {
   return (
     <svg
-      width="80"
-      height="80"
+      width="50"
+      height="50"
       viewBox="0 0 25 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -201,8 +201,8 @@ export function Play(props: any) {
 export function ColourPalette3(props: any) {
   return (
     <svg
-      width="80"
-      height="80"
+      width="50"
+      height="50"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -236,8 +236,8 @@ export function ColourPalette3(props: any) {
 export function Pencil1(props: any) {
   return (
     <svg
-      width="80"
-      height="80"
+      width="50"
+      height="50"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
