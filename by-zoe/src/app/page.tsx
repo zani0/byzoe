@@ -215,12 +215,12 @@ export default function Navigation() {
       {/* frameworks */}
       <section
         id="frameworks"
-        className="mx-auto flex-row items-center justify-center min-h-[200px]"
+        className="mx-auto items-center justify-center px-6 min-h-[200px]"
       >
         <div className="mx-auto max-w-7xl">
-          <ul className="flex justify-center items-center gap-7">
+          <ul className="m-auto lg:flex grid grid-cols-5 justify-center items-center gap-7">
             {frameworks.map((item) => (
-              <li key={item.name} className="">
+              <li key={item.name} className="col-">
                 <Image src={item.logo} alt={item.name} width={70} height={70} />
               </li>
             ))}
@@ -237,7 +237,7 @@ export default function Navigation() {
           <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300">
             here's what i do/
           </h1>
-          <p className="text-[20px]">I'm a bit of a jack of all trades, master of all</p>
+          <p className="lg:text-[20px] text-[15px]">I'm a bit of a jack of all trades, master of all</p>
         </div>
         <div className="grid lg:grid-cols-3 gap-6">
           {services.map((item) => (
