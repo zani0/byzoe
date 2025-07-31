@@ -146,9 +146,9 @@ export default function Navigation() {
   return (
     <>
       {/* navigation */}
-      <header className="bg-black/50 backdrop-blur-md mx-auto sticky top-0 z-999">
+      <header className="bg-black/50 backdrop-blur-md mx-auto sticky top-0 z-999 px-18">
         {/* desktop navigation */}
-        <nav className="hidden mx-auto lg:flex items-center lg:justify-center justify-between p-6 max-w-7xl">
+        <nav className="hidden mx-auto lg:flex items-center lg:justify-center justify-between p-6 max-w-7xl lg:max-w-full">
           <div className="flex lg:flex-1">
             <Link className="text-white text-[20px]" href="#">
               by-zoe
