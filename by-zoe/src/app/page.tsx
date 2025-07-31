@@ -12,6 +12,7 @@ import {
   Play,
   ColourPalette3,
   Pencil1,
+  AngleDoubleUp,
 } from "../../public/icons/icons";
 import { useEffect } from "react";
 
@@ -143,6 +144,7 @@ export default function Navigation() {
     { name: "LinkedIn", icon: <Linkedin />, url: "#", username: "" },
     { name: "Github", icon: <Github />, url: "#", username: "zani0" },
   ];
+  
   return (
     <>
       {/* navigation */}
@@ -190,7 +192,7 @@ export default function Navigation() {
         className="mx-auto flex bg-black justify-center items-center w-full py-6 lg:px-6 px-8 lg:min-h-[600px]"
       >
         <div className="max-w-5xl text-white items-center justify-center text-center lg:text-[20px] text-[14px]">
-          <h1 className="lg:text-[35px] text-[25px] text-pink-300 mb-12">
+          <h1 className="lg:text-[50px] text-[25px] text-pink-300 mb-12">
             about me/
           </h1>
           <p className="mb-6">
@@ -242,7 +244,7 @@ export default function Navigation() {
         className="mx-auto my-auto py-24 lg:px-0 px-6 max-w-7xl items-center justify-center flex-row lg:min-h-[700px]"
       >
         <div className="text-center mb-24">
-          <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300">
+          <h1 className="lg:text-[50px] text-[25px] text-center text-pink-300">
             Here's what i do/
           </h1>
           <p className="lg:text-[20px] text-[14px]">
@@ -268,7 +270,7 @@ export default function Navigation() {
         id="projects"
         className="mx-auto max-w-7xl bg-black justify-center items-center w-full py-6 px-6 lg:min-h-[600px]"
       >
-        <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300 mb-12">
+        <h1 className="lg:text-[50px] text-[25px] text-center text-pink-300 mb-12">
           projects i've worked on/
         </h1>
         <div className="grid lg:grid-cols-3 gap-6">
@@ -308,7 +310,7 @@ export default function Navigation() {
         </div>
         <div className="flex items-center justify-center mt-12">
           <Link
-            className="bg-black lg:w-[10vw] border-white hover:border-white/80 border-solid border-2 inline-flex justify-between items-center transition-all hover:bg-black/60 active:bg-gray-50 px-6 py-3 rounded-full text-white hover:text-white/80 text-[16px] text-center"
+            className="bg-black lg:w-[10vw] border-white hover:border-pink-300/80 border-solid border-2 inline-flex justify-between items-center transition-all hover:bg-pink-300/80 active:bg-gray-50 px-6 py-3 rounded-full text-white hover:text-white/80 text-[16px] text-center"
             href={"/projects"}
           >
             <span>See all projects</span>
@@ -327,7 +329,7 @@ export default function Navigation() {
         id="contact"
         className="m-auto max-w-7xl bg-black justify-center items-center w-full py-6 px-6 lg:min-h-[600px]"
       >
-        <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300 mb-12">
+        <h1 className="lg:text-[50px] text-[25px] text-center text-pink-300 mb-12">
           contact/
         </h1>
         <div className="grid lg:grid-cols-2 gap-4">
@@ -390,6 +392,11 @@ export default function Navigation() {
           <p className="text-white">&copy; 2025 by zoe.</p>
         </div>
       </section>
+
+      {/* back to top */}
+      <Link id="btt" className="!fixed bottom-5 right-5 p-2 rounded-full bg-pink-300 hover:bg-pink-300/70" href={"#top"} >
+        <AngleDoubleUp className="hover:opacity-10"/>
+      </Link>
     </>
   );
 }
