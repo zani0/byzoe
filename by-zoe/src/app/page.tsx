@@ -187,7 +187,7 @@ export default function Navigation() {
         id="about"
         className="mx-auto flex bg-black justify-center items-center w-full py-6 lg:px-6 px-8 lg:min-h-[600px]"
       >
-        <div className="max-w-7xl text-white items-center justify-center text-center lg:text-[20px] text-[14px]">
+        <div className="max-w-5xl text-white items-center justify-center text-center lg:text-[20px] text-[14px]">
           <h1 className="lg:text-[35px] text-[25px] text-pink-300 mb-12">
             about me/
           </h1>
@@ -246,7 +246,7 @@ export default function Navigation() {
               className="lg:p-12 p-8 border-2 border-white/10 rounded-[20px]"
             >
               <div className="mb-2">{item.icon}</div>
-              <h1 className="lg:text-[24px] text-[18px]">{item.name}</h1>
+              <h1 className="lg:text-[24px] text-[18px] mb-2">{item.name}</h1>
               <p className="lg:text-[18px] text-[14px]">{item.description}</p>
             </div>
           ))}
