@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -12,6 +13,7 @@ import {
   ColourPalette3,
   Pencil1,
 } from "../../public/icons/icons";
+import { useEffect } from "react";
 
 export default function Navigation() {
   const links = [
@@ -221,7 +223,13 @@ export default function Navigation() {
           <ul className="m-auto lg:flex grid grid-cols-5 justify-center items-center gap-7">
             {frameworks.map((item) => (
               <li key={item.name} className="">
-                <Image src={item.logo} alt={item.name} width={70} height={70} className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] object-contain" />
+                <Image
+                  src={item.logo}
+                  alt={item.name}
+                  width={70}
+                  height={70}
+                  className="w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] object-contain"
+                />
               </li>
             ))}
           </ul>
@@ -237,7 +245,9 @@ export default function Navigation() {
           <h1 className="lg:text-[35px] text-[25px] text-center text-pink-300">
             Here's what i do/
           </h1>
-          <p className="lg:text-[20px] text-[14px]">I'm a bit of a Jack of all trades, master of all</p>
+          <p className="lg:text-[20px] text-[14px]">
+            I'm a bit of a Jack of all trades, master of all
+          </p>
         </div>
         <div className="grid lg:grid-cols-3 gap-6">
           {services.map((item) => (
@@ -322,21 +332,28 @@ export default function Navigation() {
         </h1>
         <div className="grid lg:grid-cols-2 gap-4">
           <div className="w-full">
-            <Image
+            {/* <Image
               src={"/project.jpg"}
               alt=""
               className="w-full h-[500px] object-cover"
               width={400}
               height={400}
-            />
+            /> */}
+            <h1 className="lg:text-[75px] text-[22px] leading-tight">
+              Need any of my services?
+            </h1>
+            <p className="lg:text-[20px] text-[16px]">
+              Let's work together and turn your ideas into code.
+            </p>
           </div>
           <div className="lg:px-20 lg:text-left text-center">
-            <h1 className="lg:text-[35px] text-[22px]">Need any of my services?</h1>
-            <p className="lg:text-[20px] text-[16px]">Let me turn your ideas into code.</p>
             <div className="my-6">
               <ul>
                 {contacts.map((item) => (
-                  <li className="mb-2 lg:text-[18px] text-[16px]" key={item.name}>
+                  <li
+                    className="mb-2 lg:text-[18px] text-[16px]"
+                    key={item.name}
+                  >
                     {item.name}:{" "}
                     <Link
                       className="hover:underline transition-all underline-offset-8"
@@ -349,7 +366,7 @@ export default function Navigation() {
               </ul>
             </div>
             <div>
-              <ul className="flex gap-2 items-center justify-center">
+              <ul className="flex gap-2 items-center justify-center lg:justify-start">
                 {socials.map((item) => (
                   <li key={item.name}>
                     <Link
