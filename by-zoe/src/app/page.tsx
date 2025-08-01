@@ -281,7 +281,7 @@ export default function Navigation() {
             >
               <Link href="#">
                 <Image
-                  className="rounded-lg"
+                  className="rounded-lg object-cover w-full"
                   src={item.image}
                   alt={item.name}
                   width={500}
@@ -333,7 +333,7 @@ export default function Navigation() {
           contact/
         </h1>
         <div className="grid lg:grid-cols-2 gap-4">
-          <div className="w-full">
+          <div className="w-full lg:text-left text-center">
             {/* <Image
               src={"/project.jpg"}
               alt=""
